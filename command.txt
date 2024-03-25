@@ -1,0 +1,8 @@
+npm install
+mkdir users-api
+cd users-api
+npm install express mongoose body-parser
+npm init -y
+npm install cros
+set PORT=3001
+node server.js
