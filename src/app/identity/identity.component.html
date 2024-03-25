@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="user-form">
+    <h2>Identity User</h2>
+    <form (submit)="createUser()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="name" [(ngModel)]="newUser.name"  name="name" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" [(ngModel)]="newUser.email" name="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" [(ngModel)]="newUser.phone" name="phone" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="facebook">Facebook:</label>
+        <input type="text" [(ngModel)]="newUser.facebook" name="facebook" id="facebook" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="user-list">
+    <h3>User List</h3>
+    <ul>
+      <li *ngFor="let user of users">
+        <p>Name: {{ user.name }}</p>
+        <p>Email: {{ user.email }}</p>
+        <p>Phone: {{ user.phone }}</p>
+        <p>Facebook: {{ user.facebook }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
