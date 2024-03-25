@@ -1,0 +1,6 @@
+ng new identitys-recognition-app
+ng generate component identity
+ng generate service identity
+ng serve
+
+
